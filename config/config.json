@@ -8,7 +8,12 @@
   },
 
   "production": {
-    "use_env_variable": "DATABASE_URL"
+    "use_env_variable": "DATABASE_URL",
+    "dialectOptions": {
+      "ssl": {
+          "rejectUnauthorized": false
+      }
+
   },
   
   "test": {
@@ -18,5 +23,5 @@
     "host": "127.0.0.1",
     "dialect": "postgres"
   }
-  
+
 }
